@@ -56,7 +56,7 @@ public class BbookService {
 		 for (int x = 0; x < bbookpoResult.size(); x++) {
 	    	 bbookenvocResult = bbookenvioocrepository.findByPmgPoNumber(Long.parseLong(bbookpoResult.get(x)));
              long varpoNumber = 0;
-             long varidDocument = 0;
+             String varidDocument = null;
              long varstatus = 0;
              String varerror = null;
              
@@ -70,7 +70,7 @@ public class BbookService {
 	              varerror=line.getError();
 	    	 }
 	    	 
-	            jsoncab = new JsonCab(varidDocument, String.valueOf(varpoNumber), json, varstatus,varerror);
+	            jsoncab = new JsonCab(Long.valueOf(varidDocument), String.valueOf(varpoNumber), json, varstatus,varerror);
 	            jsondata = new JsonData(jsoncab);
 	            		  
 	     
@@ -104,8 +104,6 @@ public class BbookService {
      }catch (Exception e) {
      	LOG.error("Error al cargar json", e);
      }
-        
-
 
    }
 }

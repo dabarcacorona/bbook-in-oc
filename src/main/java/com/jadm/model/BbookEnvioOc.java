@@ -16,8 +16,8 @@ public class BbookEnvioOc {
     @Column(name="pmg_po_number" ,columnDefinition = "number(12)")
     private long pmgPoNumber;
 
-    @Column(name="pmg_ext_po_num" ,columnDefinition = "number(12)")
-    private long pmgExtPoNum;
+    @Column(name="pmg_ext_po_num" ,columnDefinition = "varchar2(40)")
+    private String pmgExtPoNum;
 
     @Column(name="prd_upc" ,columnDefinition = "number(18)")
     private long prdUpc;
@@ -43,8 +43,8 @@ public class BbookEnvioOc {
     @Column(name="prd_pdd_code_3" ,columnDefinition = "varchar2(12)")
     private String prdPddCode3;
 
-    @Column(name="prc_price1" ,columnDefinition = "number(11,3)")
-    private long prcPrice1;
+    @Column(name="prc_price1" ,columnDefinition = "varchar2(44)")
+    private String prcPrice1;
 
     @Column(name="prc_price2" ,columnDefinition = "number(11,3)")
     private long prcPrice2;
@@ -52,13 +52,13 @@ public class BbookEnvioOc {
     @Column(name="value" ,columnDefinition = "varchar2(100)")
     private String value;
 
-    @Column(name="proforma_invoice" ,columnDefinition = "varchar2(100)")
+    @Column(name="proforma_invoice" ,columnDefinition = "varchar2(40)")
     private String proformaInvoice;
 
     @Column(name="status" ,columnDefinition = "number(1)")
     private long status;
 
-    @Column(name="error" ,columnDefinition = "varchar2(200)")
+    @Column(name="error" ,columnDefinition = "varchar2(2)")
     private String error;
 
 	public BbookEnvioOc() {
@@ -68,9 +68,9 @@ public class BbookEnvioOc {
 	
 	
 
-	public BbookEnvioOc(String id, long pmgPoNumber, long pmgExtPoNum, long prdUpc, String prdLvlNumber,
+	public BbookEnvioOc(String id, long pmgPoNumber, String pmgExtPoNum, long prdUpc, String prdLvlNumber,
 			String prdNameFull, String prdDesc, String prdLvlParentNum, String prdPddCode1, String prdPddCode2,
-			String prdPddCode3, long prcPrice1, long prcPrice2, String value, String proformaInvoice, long status,
+			String prdPddCode3, String prcPrice1, long prcPrice2, String value, String proformaInvoice, long status,
 			String error) {
 		super();
 		this.id = id;
@@ -129,13 +129,13 @@ public class BbookEnvioOc {
 
 
 
-	public long getPmgExtPoNum() {
+	public String getPmgExtPoNum() {
 		return pmgExtPoNum;
 	}
 
 
 
-	public void setPmgExtPoNum(long pmgExtPoNum) {
+	public void setPmgExtPoNum(String pmgExtPoNum) {
 		this.pmgExtPoNum = pmgExtPoNum;
 	}
 
@@ -237,13 +237,13 @@ public class BbookEnvioOc {
 
 
 
-	public long getPrcPrice1() {
+	public String getPrcPrice1() {
 		return prcPrice1;
 	}
 
 
 
-	public void setPrcPrice1(long prcPrice1) {
+	public void setPrcPrice1(String prcPrice1) {
 		this.prcPrice1 = prcPrice1;
 	}
 
