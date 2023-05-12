@@ -4,22 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b25aaa7-f700-460f-b073-a563181cb12d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_ojdbc6_12_2_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="0b25aaa7-f700-460f-b073-a563181cb12d" name="Default" comment="Cambio tipo de datos DTO">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_ojdbc_ojdbc8_19_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_ojdbc_ons_19_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_ojdbc_oraclepki_19_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_ojdbc_osdt_cert_19_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_ojdbc_osdt_core_19_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_ojdbc_simplefan_19_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_ojdbc_ucp_19_3_0_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jadm_bbook_in-oc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/jadm_bbook_in-oc.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/Instore.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/Instore.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jadm/model/BbookEnvioOc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jadm/model/BbookEnvioOc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jadm/repository/BbookEnvioOcRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jadm/repository/BbookEnvioOcRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jadm/scheduler/ScheduledTasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jadm/scheduler/ScheduledTasks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jadm/service/BbookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jadm/service/BbookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jadm/model/BbookEnvioOc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jadm/model/BbookEnvioOc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jadm/repository/BbookEnvioOcRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jadm/repository/BbookEnvioOcRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jadm/service/BbookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jadm/service/BbookService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jadm_bbook_in-oc-0.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/jadm_bbook_in-oc-0.0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jadm_bbook_in-oc-0.0.1.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/jadm_bbook_in-oc-0.0.1.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,8 +260,16 @@
       <workItem from="1664214830879" duration="19558000" />
       <workItem from="1669207501320" duration="20000" />
       <workItem from="1669207790795" duration="3000" />
-      <workItem from="1682106338618" duration="11250000" />
+      <workItem from="1682106338618" duration="28790000" />
     </task>
+    <task id="LOCAL-00001" summary="Cambio tipo de datos DTO">
+      <created>1682354507190</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682354507190</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -297,13 +314,17 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Cambio tipo de datos DTO" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambio tipo de datos DTO" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/jadm/service/BbookService.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="3" />
+          <line>90</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

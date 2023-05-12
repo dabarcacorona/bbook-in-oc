@@ -41,7 +41,7 @@ public class ScheduledTasks {
   
     @Scheduled(cron = "${cron.expression}")
     public void scheduledBbook() throws InterruptedException {   	
-    	LOG.info("{} : Generacion periodica para el envio de tiendas  - {}", 
+    	LOG.info("{} : Generacion periodica para el envio de OC",
                 dateTimeFormatter.format(LocalDateTime.now()));  
 
     	// Date exceptions  	

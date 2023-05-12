@@ -8,8 +8,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name="BBOOK_ENVIO_OC")
 public class BbookEnvioOc {
-	
-	@Id
+
     @Column(name="idd" ,columnDefinition = "varchar2(100)")
     private String id;
 
@@ -19,7 +18,8 @@ public class BbookEnvioOc {
     @Column(name="pmg_ext_po_num" ,columnDefinition = "varchar2(40)")
     private String pmgExtPoNum;
 
-    @Column(name="prd_upc" ,columnDefinition = "number(18)")
+    @Id
+	@Column(name="prd_upc" ,columnDefinition = "number(18)")
     private long prdUpc;
 
     @Column(name="prd_lvl_number" ,columnDefinition = "varchar2(15)")
