@@ -39,21 +39,21 @@ public class BbookService {
 	private static final Logger LOG = LoggerFactory.getLogger(BbookService.class);
 
 	public void EnvioOc() {
-		 
-		 Gson g = new Gson();
-		 JsonCab jsoncab=null;
-		 JsonData jsondata=null;
-		 String responses=null;
-		 List<JsonDet> json=new ArrayList<>();
-		 HttpEntity<String> entity=null;
-		 List<BbookEnvioOc> bbookenvocResult = null;
+
 		 List<String> bbookpoResult = bbookenvioocrepository.selSdipmghde();
 //		 List<BbookEnvioOc> bbookpoResult =  bbookenvioocrepository.findByDistinctPmgPoNumber();
-		 
 		 
 	 try{
 	     //for (String row : bbookpoResult) {
 		 for (int x = 0; x < bbookpoResult.size(); x++) {
+
+			 Gson g = new Gson();
+			 JsonCab jsoncab = null;
+			 JsonData jsondata = null;
+			 String responses = null;
+			 List<JsonDet> json = new ArrayList<>();
+			 HttpEntity<String> entity = null;
+			 List<BbookEnvioOc> bbookenvocResult = null;
 
 			 bbookenvocResult = bbookenvioocrepository.findByPmgPoNumber(Long.parseLong(bbookpoResult.get(x)));
 
