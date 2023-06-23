@@ -12,8 +12,11 @@ public class JsonDet {
 	private String copa;
 	private String orden_compra;
 	private String proforma_invoice;
-	private String precio_blanco;
-	private String precio_vigente;
+	//private String precio_blanco;
+	//private String precio_vigente;
+	private String precio3x;
+	private String precio2x;
+	private String precio_unitario;
 	private String temporada;
 	
 	public JsonDet() {
@@ -22,8 +25,8 @@ public class JsonDet {
 	}
 
 	public JsonDet(String ean13, String style_prepack, String desc_producto, String style_corona, String estilo,
-			String color, String talla, String copa, String orden_compra, String proforma_invoice, String precio_blanco,
-			String precio_vigente, String temporada) {
+			String color, String talla, String copa, String orden_compra, String proforma_invoice, String precio3x,
+				   String precio2x, String precio_unitaario, String temporada) {
 		super();
 		this.ean13 = ean13;
 		this.style_prepack = style_prepack;
@@ -35,19 +38,30 @@ public class JsonDet {
 		this.copa = copa;
 		this.orden_compra = orden_compra;
 		this.proforma_invoice = proforma_invoice;
-		this.precio_blanco = precio_blanco;
-		this.precio_vigente = precio_vigente;
+		this.precio3x = precio3x;
+		this.precio2x = precio2x;
+		this.precio_unitario = precio_unitaario;
 		this.temporada = temporada;
 	}
 
 	@Override
 	public String toString() {
-		return "JsonDet [ean13=" + ean13 + ", style_prepack=" + style_prepack + ", desc_producto=" + desc_producto
-				+ ", style_corona=" + style_corona + ", estilo=" + estilo + ", color=" + color + ", talla=" + talla
-				+ ", copa=" + copa + ", orden_compra=" + orden_compra + ", proforma_invoice=" + proforma_invoice
-				+ ", precio_blanco=" + precio_blanco + ", precio_vigente=" + precio_vigente + ", temporada=" + temporada
-				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
-				+ "]";
+		return "JsonDet{" +
+				"ean13='" + ean13 + '\'' +
+				", style_prepack='" + style_prepack + '\'' +
+				", desc_producto='" + desc_producto + '\'' +
+				", style_corona='" + style_corona + '\'' +
+				", estilo='" + estilo + '\'' +
+				", color='" + color + '\'' +
+				", talla='" + talla + '\'' +
+				", copa='" + copa + '\'' +
+				", orden_compra='" + orden_compra + '\'' +
+				", proforma_invoice='" + proforma_invoice + '\'' +
+				", precio3x='" + precio3x + '\'' +
+				", precio2x='" + precio2x + '\'' +
+				", precio_unitario='" + precio_unitario + '\'' +
+				", temporada='" + temporada + '\'' +
+				'}';
 	}
 
 	public String getEan13() {
@@ -130,20 +144,28 @@ public class JsonDet {
 		this.proforma_invoice = proforma_invoice;
 	}
 
-	public String getPrecio_blanco() {
-		return precio_blanco;
+	public String getPrecio3x() {
+		return precio3x;
 	}
 
-	public void setPrecio_blanco(String precio_blanco) {
-		this.precio_blanco = precio_blanco;
+	public void setPrecio3x(String precio3x) {
+		this.precio3x = precio3x;
 	}
 
-	public String getPrecio_vigente() {
-		return precio_vigente;
+	public String getPrecio2x() {
+		return precio2x;
 	}
 
-	public void setPrecio_vigente(String precio_vigente) {
-		this.precio_vigente = precio_vigente;
+	public void setPrecio2x(String precio2x) {
+		this.precio2x = precio2x;
+	}
+
+	public String getPrecio_unitario() {
+		return precio_unitario;
+	}
+
+	public void setPrecio_unitario(String precio_unitario) {
+		this.precio_unitario = precio_unitario;
 	}
 
 	public String getTemporada() {
@@ -153,10 +175,4 @@ public class JsonDet {
 	public void setTemporada(String temporada) {
 		this.temporada = temporada;
 	}
-	
-	
-
-	
-	
-	
 }
