@@ -9,7 +9,7 @@ public class JsonCab {
 	private List<JsonDet> label;
 	private long status;
 	private String error;
-	
+
 	public JsonCab() {
 		super();
 		// TODO Auto-generated constructor stub

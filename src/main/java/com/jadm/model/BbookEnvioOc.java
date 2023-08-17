@@ -64,6 +64,10 @@ public class BbookEnvioOc {
 	@Column(name = "error", columnDefinition = "varchar2(2)")
 	private String error;
 
+	@Column(name = "qr", columnDefinition = "varchar2(100)")
+	private String qr;
+
+
 	public BbookEnvioOc() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -73,7 +77,7 @@ public class BbookEnvioOc {
 	public BbookEnvioOc(String id, long pmgPoNumber, String pmgExtPoNum, long prdUpc, String prdLvlNumber,
 						String prdNameFull, String prdDesc, String prdLvlParentNum, String prdPddCode1, String prdPddCode2,
 						String prdPddCode3, String precio3x, String precio2x, long precioUnitario, String value, String proformaInvoice, long status,
-						String error) {
+						String error, String qr) {
 		super();
 		this.id = id;
 		this.pmgPoNumber = pmgPoNumber;
@@ -93,6 +97,7 @@ public class BbookEnvioOc {
 		this.proformaInvoice = proformaInvoice;
 		this.status = status;
 		this.error = error;
+		this.qr = qr;
 	}
 
 
@@ -117,6 +122,7 @@ public class BbookEnvioOc {
 				", proformaInvoice='" + proformaInvoice + '\'' +
 				", status=" + status +
 				", error='" + error + '\'' +
+				", qr='" + qr + '\'' +
 				'}';
 	}
 
@@ -262,5 +268,13 @@ public class BbookEnvioOc {
 
 	public void setError(String error) {
 		this.error = error;
+	}
+
+	public String getQr() {
+		return qr;
+	}
+
+	public void setQr(String qr) {
+		this.qr = qr;
 	}
 }

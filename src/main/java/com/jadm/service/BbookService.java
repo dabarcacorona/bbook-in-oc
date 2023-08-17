@@ -65,7 +65,7 @@ public class BbookService {
 	    	 for (BbookEnvioOc line : bbookenvocResult) {
 	    		  //String.valueOf
 	    		  json.add(new JsonDet(String.valueOf(line.getPrdUpc()),line.getPrdLvlNumber(), line.getPrdNameFull(),line.getPrdDesc(), line.getPrdLvlParentNum(),line.getPrdPddCode1(), line.getPrdPddCode2(), line.getPrdPddCode3(), String.valueOf(line.getPmgPoNumber()), line.getProformaInvoice(),
-						  String.valueOf(line.getPrecio3x()), String.valueOf(line.getPrecio2x()), String.valueOf(line.getPrecioUnitario()), line.getValue()));
+						  String.valueOf(line.getPrecio3x()), String.valueOf(line.getPrecio2x()), String.valueOf(line.getPrecioUnitario()), line.getValue(), line.getQr()));
 	    		  
 	    		  varpoNumber=line.getPmgPoNumber();
 	              varidDocument=line.getPmgExtPoNum();

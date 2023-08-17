@@ -18,6 +18,7 @@ public class JsonDet {
 	private String precio2x;
 	private String precio_unitario;
 	private String temporada;
+	private String qr;
 	
 	public JsonDet() {
 		super();
@@ -26,7 +27,7 @@ public class JsonDet {
 
 	public JsonDet(String ean13, String style_prepack, String desc_producto, String style_corona, String estilo,
 			String color, String talla, String copa, String orden_compra, String proforma_invoice, String precio3x,
-				   String precio2x, String precio_unitaario, String temporada) {
+				   String precio2x, String precio_unitaario, String temporada, String qr) {
 		super();
 		this.ean13 = ean13;
 		this.style_prepack = style_prepack;
@@ -42,6 +43,7 @@ public class JsonDet {
 		this.precio2x = precio2x;
 		this.precio_unitario = precio_unitaario;
 		this.temporada = temporada;
+		this.qr = qr;
 	}
 
 	@Override
@@ -61,6 +63,7 @@ public class JsonDet {
 				", precio2x='" + precio2x + '\'' +
 				", precio_unitario='" + precio_unitario + '\'' +
 				", temporada='" + temporada + '\'' +
+				", qr='" + qr + '\'' +
 				'}';
 	}
 
@@ -174,5 +177,13 @@ public class JsonDet {
 
 	public void setTemporada(String temporada) {
 		this.temporada = temporada;
+	}
+
+	public String getQr() {
+		return qr;
+	}
+
+	public void setQr(String qr) {
+		this.qr = qr;
 	}
 }
